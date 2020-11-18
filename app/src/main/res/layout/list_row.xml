@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageSanPham"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_baseline_android_24"/>
+    <TextView
+        android:id="@+id/textviewTenSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/imageSanPham"
+        android:layout_alignTop="@+id/imageSanPham"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/textviewMota"
+        android:layout_below="@+id/textviewTenSP"
+        android:layout_toRightOf="@id/imageSanPham"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mô tả"
+        android:textSize="15sp"
+        android:textColor="#808080"/>
+    <ImageView
+        android:id="@+id/imgTichdiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_control_point"
+        android:layout_toRightOf="@id/imageSanPham"
+        android:layout_below="@id/textviewMota"/>
+    <TextView
+        android:id="@+id/textviewTichdiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgTichdiem"
+        android:layout_below="@id/textviewMota"
+        android:text="Tích 3%"/>
+</RelativeLayout>
